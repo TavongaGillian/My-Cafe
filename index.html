@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Salad Shop</title>
+  </head>
+  <body>
+    <nav class="display-flex">
+      <header class="background-gray header">
+        <h1 class="font-style">Yummy Saláta Café</h1>
+        <p>healthy-eating</p>
+      </header>
+      <span class="display-flex span-style"
+        ><article>
+          “your Diet Is A Bank Account. Good Food Choices Are Good Investments.”
+        </article>
+        <hr class="line width-100" />
+        <article>
+          <button class="background-gray border-1px-green">
+            <a href="#menu">menu</a>
+          </button>
+          <button class="background-gray border-1px-green">
+            <a href="#services">services</a>
+          </button>
+          <button class="background-gray border-1px-green">
+            <a href="#about">about</a>
+          </button>
+          <button class="background-gray border-1px-green">
+            <a href="#contact">contact-us</a>
+          </button>
+        </article>
+      </span>
+    </nav>
+    <hr class="line" />
+    <main id="menu">
+      <div id="services" class="container border-0 background-gray width-100">
+        <h2>services</h2>
+        <p class="font-style">
+          For a memorable meal the quality of the service is something that
+          guests often remember as much as the food and drink served. We at
+          Yummy Salate are here to provide you with the best services. We have
+          online bookings, online orders and online deliveries and if you need
+          any of the services click on the respective button below and enter
+          your details and submit.
+        </p>
+
+        <button
+          id="reserve"
+          type="button"
+          onclick="reserve();  return false;"
+          class="background-gray border-1px-green"
+        >
+          <a href="">reservations</a>
+        </button>
+        <button
+          id="onlineOrders"
+          onclick="onlineOrders() ; return false"
+          class="background-gray border-1px-green"
+        >
+          <a href="#services">online orders</a>
+        </button>
+        <button class="background-gray border-1px-green">
+          <a href="#about">deliveries</a>
+        </button>
+        <button class="background-gray border-1px-green">
+          <a href="#contact">specials</a>
+        </button>
+      </div>
+
+      <div id="details" class="container border-1px-green display-none">
+        <fieldset class="border-0">
+          <p>
+            Call the Cafe and speak to the host or hostess. Give them your name,
+            the number of your party, and the date and time you'd like to come
+            in. If the Cafe can accommodate you, they'll take your information
+            and confirm your reservation.
+          </p>
+          <button onclick="saver()" id="saveorder">Cheers</button>
+        </fieldset>
+      </div>
+      <div id="orders" class="container border-1px-green display-none">
+        <fieldset class="border-0">
+          <p>
+            Our Restaurant Ordering System offers all the required tools for the
+            successful operation of your restaurant or takeaway business, for
+            example, an online food ordering system, a Contactless ordering
+            system, and an online reservation system.
+          </p>
+
+          <button onclick="saver()" id="save">Cheers</button>
+        </fieldset>
+      </div>
+      <div class="container background-green">
+        <h2 class="font-style"><u>salads main</u></h2>
+        <p class="font-style" id="greekSalad">Greek Salad</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style" id="nicoiseSalad">Niçoise Salad</p>
+        <p class="font-style">$4.20</p>
+        <p class="font-style" id="ceaserSalad">Caesar Salad</p>
+        <p class="font-style">$3.56</p>
+        <p class="font-style" id="leafySalad">Leafy Green Salad</p>
+        <p class="font-style">$3.00</p>
+        <p class="font-style" id="fattoushSalad">Fattoush</p>
+        <p class="font-style">$3.00</p>
+      </div>
+
+      <div class="container margin-auto">
+        <h2 class="font-style">smoothie booth</h2>
+        <p class="font-style">Strawberry Banana Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Blueberry Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Almond Orange Smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Peanut butter banana smoothie:</p>
+        <p class="font-style">$3.20</p>
+        <p class="font-style">Apple Carrot Beet Smoothie:</p>
+        <p class="font-style">$3.20</p>
+      </div>
+      <div class="container margin-left background-green">
+        <h2 class="font-style">snacks</h2>
+        <p class="font-style">~hazelnuts~</p>
+        <p class="font-style">$1.20</p>
+        <p class="font-style">~cashews~</p>
+        <p class="font-style">$1.00</p>
+        <p class="font-style">~almonds~</p>
+        <p class="font-style">$1.90</p>
+        <p class="font-style">~peanuts~</p>
+        <p class="font-style">$2.50</p>
+        <p class="font-style">~sunflower seeds~</p>
+        <p class="font-style">$1.20</p>
+        <p class="font-style">~olives~</p>
+        <p class="font-style">$2.20</p>
+      </div>
+    </main>
+    <div
+      id="about"
+      class="container border-0 background-gray border-1px-green width-100"
+    >
+      <h2 class="font-style">about us</h2>
+      <p class="font-style">
+        Yummy Saláta Café is provides diets rich in vegetables and fruits and
+        can lower blood pressure, reduce the risk of heart disease and stroke,
+        prevent some types of cancer, lower risk of eye and digestive problems,
+        and have a positive effect upon blood sugar, which can help keep
+        appetite in check.
+      </p>
+    </div>
+    <footer id="contact" class="background-gray display-flex footer">
+      <article>
+        <h2 class="font-style"><u>Shops</u></h2>
+        <p class="font-style">Avondale</p>
+        <p class="font-style">Whitecliff</p>
+      </article>
+      <article>
+        <h2 class="font-style"><u> Contact</u></h2>
+        <p class="font-style">
+          <a
+            href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+            target="_blank"
+            >Email: info@salatacafe.co.zw</a
+          >
+        </p>
+        <p class="font-style"><a href=""> Tel: +263 771 13 6936</a></p>
+      </article>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
